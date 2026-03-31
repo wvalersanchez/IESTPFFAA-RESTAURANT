@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --fuentPrincipal: "Montserrat", sans-serif;
+    --fuenteSecundaria: "Playfair Display", serif;
+    --colorPrimario: #A91E22;
+    --colorSencundario: #E6A817;
+    --coloracentoclaro: #2F6B3F;
+    --coloracentooscuro: #6B3e23;
+    --colorneutroclaro: #f5e9d8;
+    --colorneutrogriss: #e5e1dc;
+    --colorblanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    background-color: var(--colorneutroclaro);
+    font-family: var(--fuentPrincipal);
+    font-size: 1.6rem; /* Corregido de font-family a font-size */
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background: var(--coloracentooscuro);
+    padding: 1.5rem 0;
+}
+
+.header_contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-family: var(--fuenteSecundaria);
+    font-size: 3.2rem;
+    font-weight: bold; /* Corregido */
+    color: var(--colorblanco);
+}
+
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: var(--colorneutroclaro);
+    font-size: 1.8rem;
+    transition: color .3s;
+}
+
+/* Corregido el selector de hover */
+.header_nav a:hover {
+    color: var(--colorSencundario);
+}
+
+/* Botón Reserva */
+.cta-primary {
+    display: inline-block;
+    background: var(--colorPrimario);
+    color: var(--colorblanco);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    transition: background .3s;
+}
+
+.cta-primary:hover {
+    background: var(--coloracentoclaro);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
