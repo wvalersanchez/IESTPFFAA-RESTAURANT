@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --fuentPrincipal: "Montserrat", sans-serif;
+    --fuentePrincipal: "Montserrat", sans-serif;
     --fuenteSecundaria: "Playfair Display", serif;
     --colorPrimario: #A91E22;
-    --colorSencundario: #E6A817;
-    --coloracentoclaro: #2F6B3F;
-    --coloracentooscuro: #6B3e23;
-    --colorneutroclaro: #f5e9d8;
-    --colorneutrogriss: #e5e1dc;
-    --colorblanco: #fff;
+    --colorSecundario: #E6A817;
+    --colorAcentoClaro: #2F6B3F;
+    --colorAcentoOsuco: #6B3E2E;
+    --colorNeutroClaro: #F5E9D8;
+    --colorNeutroGris: #E5E1DC;
+    --colorBlanco: #FFF;
 }
 
 * {
@@ -23,14 +23,17 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;  /*para establecer que 1rem = 10px*/
 }
 
 body {
-    background-color: var(--colorneutroclaro);
-    font-family: var(--fuentPrincipal);
-    font-size: 1.6rem; /* Corregido de font-family a font-size */
-    line-height: 1.5;
+    background-color: var(--colorNeutroClaro);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -42,68 +45,59 @@ body {
 .layout {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    height: 100dvh;
 }
 
-/* Header Styles */
+/*HEADER*/
+
 .header {
-    background: var(--coloracentooscuro);
+    background: var(--colorAcentoOsuco);
     padding: 1.5rem 0;
 }
 
-.header_contenido {
+.header .header__contenido {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_logo {
+.header .header__logo{
     font-family: var(--fuenteSecundaria);
     font-size: 3.2rem;
-    font-weight: bold; /* Corregido */
-    color: var(--colorblanco);
+    font-weight: bold;
+    color: var(--colorNeutroClaro);
 }
 
-.header_nav ul {
+.header .header__nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 2.5rem;
-}
-
-.header_nav a {
-    text-decoration: none;
-    color: var(--colorneutroclaro);
     font-size: 1.8rem;
-    transition: color .3s;
 }
 
-/* Corregido el selector de hover */
-.header_nav a:hover {
-    color: var(--colorSencundario);
+.header .header__nav a {
+    color: var(--colorNeutroClaro);
 }
 
-/* Botón Reserva */
+.header .header__nav a:hover {
+    color: var(--colorSecundario);
+}
+
+
 .cta-primary {
-    display: inline-block;
     background: var(--colorPrimario);
-    color: var(--colorblanco);
-    text-decoration: none;
+    color: var(--colorBlanco);
+    border: none;
     padding: 1rem 2rem;
+    cursor: pointer;
     border-radius: .5rem;
-    font-size: 1.6rem;
-    transition: background .3s;
     display: inline-block;
 }
 
 .cta-primary:hover {
-    background: var(--coloracentoclaro);
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
+    background: var(--colorAcentoClaro);
 }
 
 /*HERO*/
@@ -113,24 +107,38 @@ body {
     position: relative;
 }
 
-.hero_overlay {
-    background: rgba(0, 0, 0, 0.5); /* mejor contraste */
+.hero__overlay {
+    background: rgba(0, 0, 0, .5);
     height: 100%;
 }
 
-.hero_contenido{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero__contenido {
+    color: var(--colorBlanco);
     height: 100%;
-    color: var(--colorblanco);
+    padding-top: 20rem;
 }
 
-.hero_contenido h2{
-    font-family: var(--colorSencundario);
+.hero__contenido h2 {
+    font-family: var(--fuenteSecundaria);
     font-size: 4.8rem;
 }
 
-.hero_contenido p{
+.hero__contenido p {
     margin: 1rem 0 2rem;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.menu .carta__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.carta__contenido .carta__item {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
 }

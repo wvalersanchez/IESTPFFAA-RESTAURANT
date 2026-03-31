@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,11 @@
     <title>Gourmet Criollo</title>
 </head>
 <body>
-    <div class="layout"> 
+    <div class="layout">
         <header class="header">
-            <div class="header_contenido container">
-                <p class="header_logo">Gourmet Criollo</p>
-                
-                <nav class="header_nav">
+            <div class="header__contenido container">
+                <p class="header__logo">Gourmet Criollo</p>
+                <nav class="header__nav">
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Carta</a></li>
@@ -20,32 +19,72 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
-
-                <a class="cta-primary" href="#">Reserva Mesa</a>
+                <a class="cta-primary" href="#">Reservar Mesa</a>
             </div>
         </header>
-
         <main>
-            
-<section class="hero">
-    <div class="hero_overlay">
-        <div class="hero_contenido">
-            <h2>Gourmet Criollo</h2>
-            <p>Sabor que honra la tradicion</p>
-            <div>
-            <a class="cta-primary" href="#">Reserva Mesa</a>
-        </div>
-    </div>
-</section>
-        </main>  
+            <!--HERO SECTION-->
+            <section class="hero">
+                <div class="hero__overlay">
+                    <div class="hero__contenido container">
+                        <h2>Gourmet Criollo</h2>
+                        <p>Sabor que honra la tradición</p>
+                        <a class="cta-primary" href="#">Reservar mesa</a>
+                    </div>
+                </div>
+            </section>
 
-        <footer class="footer">
-            <div class="container">
-                <p>footer &copy; 2026</p>
+
+  <section class="menu container">
+    <div class="menu__carta">
+        <h2>Nuestra carta</h2>
+        <div class="carta__contenido">
+            
+            <div class="carta__seccion">
+                <h3>Entrada</h3>
+                <div class="carta__item">
+                    <p>Causa Limeña</p>
+                    <p>S/. 20.00</p>
+                </div>
+                <div class="carta__item">
+                    <p>Papa a la huancaína</p>
+                    <p>S/. 18.00</p>
+                </div>
             </div>
+
+            <div class="carta__seccion">
+                <h3>Fondo</h3>
+                <div class="carta__item">
+                    <p>Tallarín saltado</p>
+                    <p>S/. 20.00</p>
+                </div>
+                <div class="carta__item">
+                    <p>Seco de cordero con frejoles</p>
+                    <p>S/. 35.00</p>
+                </div>
+            </div>
+
+            <div class="carta__seccion">
+                <h3>Postre</h3>
+                <div class="carta__item">
+                    <p>Mazamorra morada</p>
+                    <p>S/. 10.00</p>
+                </div>
+                <div class="carta__item">
+                    <p>Mazamorra de calabaza</p>
+                    <p>S/. 10.00</p>
+                </div>
+                <div class="carta__item">
+                    <p>Arroz con leche</p>
+                    <p>S/. 10.00</p>
+                </div>
+            </div>
+
+        </div> </div> </section>
+        </main>
+        <footer class="footer">
+            <p>Footer</p>
         </footer>
     </div>
 </body>
 </html>
-
-
