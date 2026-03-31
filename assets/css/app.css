@@ -92,6 +92,7 @@ body {
     border-radius: .5rem;
     font-size: 1.6rem;
     transition: background .3s;
+    display: inline-block;
 }
 
 .cta-primary:hover {
@@ -103,4 +104,33 @@ body {
     color: white;
     padding: 2rem 0;
     text-align: center;
+}
+
+/*HERO*/
+.hero {
+    background: url('../img/portada_hero.jpg') center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.hero_overlay {
+    background: rgba(0, 0, 0, 0.5); /* mejor contraste */
+    height: 100%;
+}
+
+.hero_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: var(--colorblanco);
+}
+
+.hero_contenido h2{
+    font-family: var(--colorSencundario);
+    font-size: 4.8rem;
+}
+
+.hero_contenido p{
+    margin: 1rem 0 2rem;
 }

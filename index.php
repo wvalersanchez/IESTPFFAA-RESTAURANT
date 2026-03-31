@@ -26,7 +26,17 @@
         </header>
 
         <main>
-            <p>Contenido Principal</p>
+            
+<section class="hero">
+    <div class="hero_overlay">
+        <div class="hero_contenido">
+            <h2>Gourmet Criollo</h2>
+            <p>Sabor que honra la tradicion</p>
+            <div>
+            <a class="cta-primary" href="#">Reserva Mesa</a>
+        </div>
+    </div>
+</section>
         </main>  
 
         <footer class="footer">
@@ -37,3 +47,5 @@
     </div>
 </body>
 </html>
+
+
